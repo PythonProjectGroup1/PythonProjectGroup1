@@ -7,9 +7,9 @@ The workflow includes collecting data from NYC Open Data, performing data cleani
 
 ---
 
-## 2. Requirements
+## Requirements
 
-### 2.1 Getting the Data
+### Getting the Data
 *Description:*  
 This section will detail the process for identifying, accessing, and importing datasets from NYC Open Data and [Weather Data API TBD] including API usage and dataset selection criteria.
 
@@ -17,7 +17,7 @@ _To be added…_
 
 ---
 
-### 2.2 Cleaning the Data
+### Cleaning the Data
 *Description:*  
 This section will outline the data preprocessing workflow, including handling missing values, normalizing fields, transforming data types, and preparing datasets for analysis.
 
@@ -25,7 +25,7 @@ _To be added…_
 
 ---
 
-### 2.3 Analyzing the Data
+### Analyzing the Data
 *Description:*  
 This section will document analytical methods used—such as descriptive statistics, visualizations, and predictive modeling—to extract insights from cleaned datasets.
 
@@ -33,7 +33,7 @@ _To be added…_
 
 ---
 
-### 2.4 Preparing a Report Summary
+### Preparing a Report Summary
 *Description:*  
 This section will summarize how key findings are compiled into reports, including narrative summaries, visualizations, and potential policy or business implications.
 
