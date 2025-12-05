@@ -7,7 +7,7 @@ The workflow includes collecting data from NYC Open Data, performing data cleani
 
 ---
 
-## Requirements
+## Requirements 
 
 ### Getting the Data
 *Description:*  
@@ -51,7 +51,7 @@ _To be added…_
 ---
 
 ## Project Status
-_In progress — sections will be updated as the analysis is completed._
+_In progress — sections will be updated as the project is completed
 
 
 # 12/4/2025
