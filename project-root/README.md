@@ -12,5 +12,5 @@ Contains:
 - file for combining NYC crime data with NYC weather data
 - helper functions used across the project
 
-# source_code
+# generated_summaries
   Text and chart summaries describing trends or interesting findings.
