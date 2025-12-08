@@ -13,9 +13,6 @@ This folder contains all of the Python files used to fetch, clean, prepare and c
 - **weather_crime_api/**  
   Files for retrieving and cleaning weather datasets.
 
-- **shared_utilities/**  
-  Helper functions used across the project (API requests, data cleaning functions, etc...).
-
 - **data_summary_tools/**  
   Functions responsible for generating summaries of our data (temperatures with the highest crime, hours / days when crime is more likely, etc...).
 
