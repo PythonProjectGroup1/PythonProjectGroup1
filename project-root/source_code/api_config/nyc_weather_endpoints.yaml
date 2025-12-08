@@ -1,0 +1,29 @@
+# config.yaml
+open_meteo:
+  url: "https://historical-forecast-api.open-meteo.com/v1/forecast"
+
+  params:
+    # Manhattan (Central Park official weather station)
+    latitude: 40.77898
+    longitude: -73.96925
+
+    start_date: "2023-01-01"
+    end_date: "2023-12-31"
+
+    daily:
+      - apparent_temperature_max
+      - daylight_duration
+      - precipitation_hours
+
+    timezone: "America/New_York"
+    temperature_unit: "fahrenheit"
+
+  client:
+    cache:
+      enabled: true
+      backend: ".cache"
+      expire_after_seconds: 3600
+    retry:
+      enabled: true
+      retries: 5
+      backoff_factor: 0.2
