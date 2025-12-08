@@ -5,18 +5,23 @@ This folder contains all of the Python files used to fetch, clean, prepare and c
 - **api_config/**  
   YAML files containing API endpoints, authentication settings, and query parameters.
 
-- **nyc_crime_api/**  
+## NYC Crime API
+  To run the script make sure `sodapy` and `pandas` and `PyYAML` are installed in your environment.
+  pip install sodapy
+  pip install PyYAML
+  pip install pandas
+    
   Files for retrieving and cleaning NYC crime data.
 
 ## Weather Data API
-
-- **fetch_weather_api.py**  
-  Retrieves historical weather data and stores it as a raw snapshot.
-  To run the script make sure `openmeteo-requests`, `requests-cache`, `retry-requests`, `numpy` and `pandas` are installed in your environment.
+ To run the script make sure `openmeteo-requests`, `requests-cache`,`PyYAML`, `retry-requests`, `numpy` and `pandas` are installed in your environment.
   pip install openmeteo-requests
   pip install PyYAML
   pip install requests-cache retry-requests numpy pandas
 
+- **fetch_weather_api.py**  
+  Retrieves historical weather data and stores it as a raw snapshot.
+ 
 - **clean_weather_dataset.py**  
   Cleans the raw snapshot by standardizing column names, fixing formats and handling missing values. Edits the cleaned dataset by grouping date and location to produce a merge-ready table compatible with nyc crime data.
 
