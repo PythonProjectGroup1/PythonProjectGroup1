@@ -1,13 +1,12 @@
 # NYC Open Data Analytics Project
 
 This project explores open datasets from the City of New York (https://opendata.cityofnewyork.us/) to uncover meaningful insights about city operations, public services, and resident experiences.  
-Using Python-based analytics tools, the project aims to help various stakeholders—such as local policymakers, community leaders, and businesses—better understand trends, challenges, and opportunities across NYC’s neighborhoods and agencies.
 
-The workflow includes collecting data from NYC Open Data, performing data cleaning, conducting exploratory and statistical analysis, and summarizing findings in a clear, actionable report.
+This project involves collecting data from NYC Open Data, performing data cleaning, conducting statistical analysis, and summarizing findings in a clear, actionable report.
 
 ---
 
-## Requirements
+## Requirements 
 
 ### Getting the Data
 *Description:*  
@@ -51,7 +50,7 @@ _To be added…_
 ---
 
 ## Project Status
-_In progress — sections will be updated as the analysis is completed._
+_In progress — sections will be updated as the project is completed
 
 
 # 12/4/2025
