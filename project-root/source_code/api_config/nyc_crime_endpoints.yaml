@@ -1,0 +1,12 @@
+socrata:
+  client:
+    domain: "data.cityofnewyork.us"
+    app_token: "nyc_crime_api_key"
+    timeout: 60
+  query:
+    dataset_id: "dataset_id"
+    where: >
+      cmplnt_fr_dt between '2023-01-01T00:00:00' and '2023-12-31T23:59:59'
+      AND boro_nm = 'MANHATTAN'
+    select: "cmplnt_fr_dt, ofns_desc, boro_nm, pd_desc"
+    limit: 150000

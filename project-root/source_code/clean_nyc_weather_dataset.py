@@ -4,7 +4,7 @@ from paths import NYC_WEATHER_CSV, CLEANED_NYC_WEATHER_CSV
 from constants import DAYLIGHT_HOUR_DIVISOR, DECIMAL_PLACES
 from helper_functions import fetch_csv
 
-def normalize_date_column(df_weather: pd.DataFrame):
+def standardize_date_column(df_weather: pd.DataFrame):
     #  Converts 'date' to standard panda date_times.
     #  Renames 'date' column to 'Date' to standardize columns across csv files
     df_weather['date'] = pd.to_datetime(df_weather['date'], errors='coerce', utc=True)
@@ -39,7 +39,7 @@ def export_clean_weather_csv(df_weather: pd.DataFrame) -> None:
 
 def main():
     df_weather = fetch_csv(path=NYC_WEATHER_CSV)
-    normalize_date_column(df_weather)
+    standardize_date_column(df_weather)
     round_temperature_values(df_weather)
     convert_daylight_to_hours(df_weather)
     export_clean_weather_csv(df_weather)

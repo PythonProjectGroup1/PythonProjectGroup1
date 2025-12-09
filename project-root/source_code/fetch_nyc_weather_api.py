@@ -77,6 +77,12 @@ def fetch_daily_weather(
 
     return df_weather
 
+def export_weather_cvs(df_weather: pd.DataFrame):
+    df_weather.to_csv(NYC_WEATHER_CSV, index=False)
+
+    print(f"Saved weather CSV to:\n{NYC_WEATHER_CSV}")
+    print("\nPreview:\n", df_weather.head())
+
 def main():
     # Load configuration from yaml file
     config = load_config(NYC_WEATHER_CONFIG)
@@ -89,10 +95,7 @@ def main():
     df_weather = fetch_daily_weather(client, api_config)
 
     # Save to CSV in project-root/data_sets/raw_snapshots
-    df_weather.to_csv(NYC_WEATHER_CSV, index=False)
-
-    print(f"Saved weather CSV to:\n{NYC_WEATHER_CSV}")
-    print("\nPreview:\n", df_weather.head())
+    export_weather_cvs(df_weather)
 
 
 if __name__ == "__main__":
