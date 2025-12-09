@@ -70,13 +70,14 @@ def group_crimes_by_date(df_crime: pd.DataFrame) -> pd.DataFrame:
         'public_order': 'public_order_crimes'
     })
 
+    # creates a new column that contains a sum of all crimes reported that day
     totals['total_crimes'] = (
         totals['property_crimes']
         + totals['violent_crimes']
         + totals['public_order_crimes']
     )
 
-    # --- 2. Per-crime counts (crime_type columns) ---
+    # columns of all the individual crime descriptions (68)
     crime_counts = (
         df_crime
         .groupby(['Date', 'crime_type'])
@@ -97,6 +98,7 @@ def group_crimes_by_date(df_crime: pd.DataFrame) -> pd.DataFrame:
     ]
     crime_type_cols = []
 
+    # if a column name isn't already included in total_cols add it as a new column 
     for column_name in combined.columns:
      if column_name not in total_cols:
         crime_type_cols.append(column_name)
