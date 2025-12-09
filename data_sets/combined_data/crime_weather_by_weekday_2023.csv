@@ -1,0 +1,8 @@
+DayOfWeek,CrimeCount,AverageApparentTempMax,AverageDaylightDuration,AveragePrecipitationHours
+Monday,17916,63.403,43974.072,3.231
+Tuesday,19064,60.751,43973.975,1.673
+Wednesday,19789,62.185,43973.864,1.154
+Thursday,19338,63.683,43973.741,1.558
+Friday,19878,63.535,43973.601,2.077
+Saturday,18587,62.08,43973.447,2.885
+Sunday,17239,61.717,43775.871,2.66
