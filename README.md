@@ -10,7 +10,7 @@ This project involves collecting data from NYC Open Data, performing data cleani
 - Python (Pandas, NumPy, Requests, etc.)
 - Jupyter Notebook
 - NYC Open Data API
-- Undetermined Weather API [TBD - Remove]
+- Weather API: open-meteo.com
 - Git/GitHub for version control
 
 ---
